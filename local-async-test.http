@@ -1,0 +1,31 @@
+### Health check ProductService
+GET http://localhost:3001/
+Accept: text/plain
+
+###
+
+### Health check OrderService
+GET http://localhost:3002/
+Accept: text/plain
+
+###
+
+### Publish an order from ProductService (Dapr pubsub)
+POST http://localhost:3001/publish
+Content-Type: application/json
+
+{
+    "orderId": "order-123",
+    "product": {
+        "id": 1,
+        "name": "Sample Product",
+        "price": 19.99,
+        "quantity": 2
+    }
+}
+
+###
+
+### Dapr subscription declaration from OrderService
+GET http://localhost:3002/dapr/subscribe
+Accept: application/json
