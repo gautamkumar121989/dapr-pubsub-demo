@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3001;
 const DAPR_HOST = process.env.DAPR_HOST || 'localhost';
-const DAPR_PORT = process.env.DAPR_PORT || '3501';
+const DAPR_PORT = process.env.DAPR_PORT || '3500';// change to 3501 for local testing
 app.use(express.json());
 
 app.get('/', (req, res) => {

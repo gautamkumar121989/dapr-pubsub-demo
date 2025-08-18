@@ -8,9 +8,11 @@ spec:
   version: v1
   metadata:
   - name: redisHost
-    value: localhost:6379
+    secretRef: redis-host
   - name: redisPassword
-    value: ""
+    secretRef: redis-password
+  - name: enableTLS
+    value: "true"
 scopes:
 - productservice
 - orderservice
