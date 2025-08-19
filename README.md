@@ -121,3 +121,25 @@ Repeat for `orderservice` with Dapr app id `orderservice` and port `3002`.
 ## Architecture diagram
 
 ![alt text](image.png)
+
+## GenAI-Assisted Tasks Output
+
+This project leveraged GitHub Copilot and GenAI tools for:
+
+- **Code Generation:**  
+  - Scaffolded both [`ProductService`](ProductService/index.js) and [`OrderService`](OrderService/index.js) microservices with Express.js and Dapr pub/sub integration.
+  - Generated Dockerfiles for both services: [`ProductService/Dockerfile`](ProductService/Dockerfile), [`OrderService/Dockerfile`](OrderService/Dockerfile).
+  - Created a Dapr Redis pub/sub component: [`components/pubsub.yaml`](components/pubsub.yaml).
+
+- **Workspace Analysis:**  
+  - Identified missing dependencies and configuration issues.
+  - Suggested improvements for error handling, input validation, and security (e.g., using `secretRef` for Redis credentials).
+
+- **Documentation:**  
+  - Provided step-by-step deployment instructions for both local and Azure environments.
+
+- **Automation Guidance:**  
+  - Outlined commands for building, running, and deploying containers.
+  - Provided Azure CLI and Portal steps for resource provisioning and deployment.
+
+These outputs accelerated development, improved code quality, and ensured best practices for cloud-native microservices with Dapr.
