@@ -108,8 +108,8 @@ Push OrderService to container registry
  Create a Container App -> choose the environment created above -> specify image `<acrName>.azurecr.io/productservice:v1` -> set port (3001) -> enable Dapr -> set Dapr app id `productservice` and Dapr app port `3001` -> configure ingress.
 Repeat for `orderservice` with Dapr app id `orderservice` and port `3002`.
 ```
-8. Publish the event using postman for productservice url. Refer screenshot doc file for more details.
-9. Check the log of both ACA apps productservice and orderservice. Refer screenshot doc file for more details.
+8. Publish the event using postman for productservice url. Refer screenshot doc file(Screenshots of application running on Azure portal.docx) for more details.
+9. Check the log of both ACA apps productservice and orderservice. Refer screenshot doc file(Screenshots of application running on Azure portal.docx) for more details.
 
 ## Important configuration notes
 - Dapr sidecar ports:
