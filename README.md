@@ -118,3 +118,6 @@ Repeat for `orderservice` with Dapr app id `orderservice` and port `3002`.
 ```
 - ACA: Dapr HTTP API is on port 3500 for all apps; ensure `DAPR_PORT` usage in code or the app configuration matches ACA.
 
+## Architecture diagram
+
+![alt text](image.png)
